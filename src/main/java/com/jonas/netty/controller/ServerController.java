@@ -1,7 +1,7 @@
 package com.jonas.netty.controller;
 
 import com.jonas.netty.server.NettyServer;
-import com.jonas.netty.session.ServerSession;
+import com.jonas.netty.server.session.ServerSession;
 import lombok.RequiredArgsConstructor;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.PostMapping;

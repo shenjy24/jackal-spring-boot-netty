@@ -1,6 +1,6 @@
 package com.jonas.netty.server;
 
-import com.jonas.netty.session.ServerSession;
+import com.jonas.netty.server.session.ServerSession;
 import io.netty.channel.Channel;
 import org.springframework.stereotype.Component;
 

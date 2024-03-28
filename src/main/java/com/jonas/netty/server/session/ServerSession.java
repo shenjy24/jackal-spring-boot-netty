@@ -1,4 +1,4 @@
-package com.jonas.netty.session;
+package com.jonas.netty.server.session;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;

@@ -1,4 +1,4 @@
-package com.jonas.netty.session;
+package com.jonas.netty.server.session;
 
 import lombok.Getter;
 
