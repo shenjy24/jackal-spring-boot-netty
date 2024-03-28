@@ -26,7 +26,7 @@ public class ServerController {
     private final NettyServer nettyServer;
 
     @PostMapping("/listSession")
-    public List<ServerSessionVo> listSession() {
+    public List<SessionVo> listSession() {
         List<ServerSession> sessions = nettyServer.listSession();
         return toServerSessionVos(sessions);
     }
@@ -36,13 +36,13 @@ public class ServerController {
         nettyServer.sendMessage(sessionId, message);
     }
 
-    private List<ServerSessionVo> toServerSessionVos(List<ServerSession> sessions) {
+    private List<SessionVo> toServerSessionVos(List<ServerSession> sessions) {
         if (CollectionUtils.isEmpty(sessions)) {
             return Collections.emptyList();
         }
-        List<ServerSessionVo> sessionVos = new ArrayList<>();
+        List<SessionVo> sessionVos = new ArrayList<>();
         for (ServerSession session : sessions) {
-            ServerSessionVo sessionVo = new ServerSessionVo();
+            SessionVo sessionVo = new SessionVo();
             sessionVo.setSessionId(session.getSessionId());
             sessionVo.setHost(session.getAddress().getHostString());
             sessionVo.setPort(session.getAddress().getPort());
