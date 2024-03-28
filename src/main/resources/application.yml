@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: jackal-spring-boot-netty
+
+server:
+  port: 18080
+
+netty:
+  server:
+    port: 18888
